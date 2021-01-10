@@ -1,0 +1,219 @@
+/*Again, nothing much is comment in this stylesheet, since this only shows how the elements in the webpage are formatted. */
+
+/*This shows how the background image is formatted and what font is used in the webpages. */
+body {
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #fafafa;
+    background-image: url('../images/pictures/members_page/twice_webpage-background_profile_5.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*This is how the elements in the navigation bar is formatted and designed. */
+.navigationbar {
+    overflow: scroll;
+    background-color: transparent;
+    padding: 12px 18px 10px 18px;
+}
+
+.navigationbar a{
+    float: left;
+    color: #fafafa;
+    text-align: center;
+    padding: 12px 18px 10px 18px;
+    text-decoration: none;
+    font-size: 1.25vw;
+    transition: transform .4s; 
+}
+
+/*This shows how the elements in the navigation bar act when the cursor is hovered above them. */
+.navigationbar a:hover {
+    color: #fafafa;
+    transform: scale(1.15);
+}
+
+.navigationbar a.active {
+    opacity: 1;
+    color: #fafafa;
+}
+
+/*This shows how the footer, where the social media icons and sources are, is designed. */
+.footer {
+    position: absolute;
+    background-color: transparent;   
+    bottom: 5px;
+    right: 10px;
+    width: 100%;
+    position: fixed;
+    text-decoration:none;
+}
+
+.footer_2 {
+    display: block;
+    color: white;
+    bottom: 5px;
+    text-align: left;
+    left: 10px;
+    margin-right: 50%;
+    position: fixed;
+    font-size: 0.5vw;
+}
+
+.non_logo {
+    padding: 5px 5px 0 5px;
+    float: right;
+}
+
+/*This formats the logo of the webpage, which is "Time to TWICE". */
+.logo {
+  z-index: 2;
+  position: absolute;
+  padding: 0px 20px;
+  margin-top: -10px;
+  margin-left: -25px;
+  transition: transform .4s;
+}
+
+/*This shows how the logo should act when the cursor is hovered above it. */
+.logo:hover {
+  transform: scale(1.0);
+}
+
+
+/*This is for the title and the information about TWICE. */
+.homepage_title {
+  margin: -2.5% 15px 0 15px;
+  background-color: rgba(5, 5, 5, 0.4);
+  padding: 5px; 
+}
+
+.homepage_title img {
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage_title_2 {
+  margin: 2.5% 15px 0 15px;
+  background-color: rgba(5, 5, 5, 0.4);
+  padding: 5px; 
+}
+
+.homepage_title_2 img {
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*This is how the images are formatted like a collage in the webpage. */
+.table {
+  display: fixed-table;
+  float: left;
+  clear: right;
+  margin: -655px 0px 0px 40px;
+}
+
+.column {
+  float: left;
+  width: 46.5%;
+  padding: 0 4px 0 4px;
+}
+
+.column img {
+  margin-top: 0px;
+  transition: transform .4s;  
+  opacity: 0.9;
+  padding: 1px 1px;
+}
+
+/*This shows how the images in the collage should act when the cursor is hovered above them. */
+.column img:hover {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*This is for the format of the social media icons. */
+.footer table {
+  float: right;
+}
+
+.footer th {
+   padding: 0 2px 0 2px;
+   transition: transform .2s;
+}
+.footer th:hover{
+   transform: scale(1.15);
+}
+
+.container {
+  position: relative;
+  width: 96.75%;
+}
+
+.image {
+  display: block;
+  width: 86%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 86%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(5, 5, 5, 0.3);
+  border-radius: 50%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 0.8vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 86%;
+
+  
+* {
+  box-sizing: border-box;
+}
+
+.column_1 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row_1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+

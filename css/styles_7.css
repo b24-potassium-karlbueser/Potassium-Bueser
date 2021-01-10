@@ -1,0 +1,211 @@
+/*Again, nothing much is comment in this stylesheet, since this only shows how the elements in the webpage are formatted. */
+
+/*This shows how the background image is formatted and what font is used in the webpages. */
+body {
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #fafafa;
+    background-image: url('../images/pictures/discography_page/twice_webpage-background_profile_6.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*This is how the elements in the navigation bar is formatted and designed. */
+.navigationbar {
+    overflow: scroll;
+    background-color: transparent;
+    padding: 12px 18px 10px 18px;
+}
+
+.navigationbar a{
+    float: left;
+    color: #fafafa;
+    text-align: center;
+    padding: 12px 18px 10px 18px;
+    text-decoration: none;
+    font-size: 1.25vw;
+    transition: transform .4s; 
+}
+
+/*This shows how the elements in the navigation bar act when the cursor is hovered above them. */
+.navigationbar a:hover {
+    color: #fafafa;
+    transform: scale(1.15);
+}
+
+.navigationbar a.active {
+    opacity: 1;
+    color: #fafafa;
+}
+
+/*This shows how the footer, where the social media icons and sources are, is designed. */
+.footer {
+    position: absolute;
+    background-color: transparent;   
+    bottom: 5px;
+    right: 10px;
+    width: 100%;
+    position: fixed;
+    text-decoration:none;
+}
+
+.footer_2 {
+    display: block;
+    color: white;
+    bottom: 5px;
+    text-align: left;
+    left: 10px;
+    margin-right: 50%;
+    position: fixed;
+    font-size: 0.5vw;
+}
+
+.non_logo {
+    padding: 5px 5px 0 5px;
+    float: right;
+}
+
+.non_logo {
+    padding: 5px 5px 0 5px;
+    float: right;
+}
+
+/*This formats the logo of the webpage, which is "Time to TWICE". */
+.logo {
+  z-index: 2;
+  position: absolute;
+  padding: 0px 20px;
+  margin-top: -10px;
+  margin-left: -25px;
+  transition: transform .4s;
+}
+
+/*This shows how the logo should act when the cursor is hovered above it. */
+.logo:hover {
+  transform: scale(1.0);
+}
+
+
+/*This is for the title and the information about TWICE. */
+.homepage_title {
+  margin: -5% 15px 10px 15px;
+  background-color: rgba(5, 5, 5, 0.4);
+  padding: 5px; 
+}
+
+.homepage_title img {
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*This is how the images are formatted like a collage in the webpage. */
+.table {
+  display: fixed-table;
+  float: left;
+  clear: right;
+  margin: -655px 0px 0px 40px;
+}
+
+.column {
+  float: left;
+  width: 46.5%;
+  padding: 0 4px 0 4px;
+}
+
+.column img {
+  margin-top: 0px;
+  transition: transform .4s;  
+  opacity: 0.9;
+  padding: 1px 1px;
+}
+
+/*This shows how the images in the collage should act when the cursor is hovered above them. */
+.column img:hover {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon_a {
+  background: url("../images/icons/social media_icons.png") no-repeat -511px -489px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon_a a {
+  position: absolute;
+  transition: transform .4s;
+}
+
+.icon_a a:hover {  
+  transform: scale(1.15);
+}
+
+.icon_b {
+  background: url("../images/icons/social media_icons.png") no-repeat -763px -487px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon_b a {
+  position: absolute;
+  transition: transform .4s;
+}
+
+.icon_b a:hover {  
+  transform: scale(1.15);
+}
+
+.icon_c {
+  background: url("../images/icons/social media_icons.png") no-repeat -1040px -489px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon_c a {
+  position: absolute;
+  transition: transform .4s;
+}
+
+.icon_c a:hover {  
+  transform: scale(1.15);
+}
+
+.icon_d {
+  background: url("../images/icons/social media_icons.png") no-repeat -1331px -488px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon_d a {
+  position: absolute;
+  transition: transform .4s;
+}
+
+.icon_d a:hover {  
+  transform: scale(1.15);
+}
+
+/*This is for the format of the social media icons. */
+table {
+  float: right;
+}
+
+th {
+   padding: 0 1px 0 1px;
+   transition: transform .2s;
+}
+
+/*This shows how the social media icons should act when the cursor is hovered above them. */
+th:hover{
+   transform: scale(1.15);
+}
